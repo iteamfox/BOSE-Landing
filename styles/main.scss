@@ -1,0 +1,28 @@
+@import '../utils/reset';
+
+@import '../blocks/title';
+@import '../blocks/header';
+@import '../blocks/main';
+@import '../blocks/recommended';
+@import '../blocks/categories';
+@import '../blocks/photo';
+@import '../blocks/button';
+@import '../blocks/about';
+@import '../blocks/paragraph';
+@import '../blocks/contacts';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+ margin: 0;
+ font-family: 'Inter', sans-serif;
+ color: #292929;
+ font-size: 16px;
+ line-height: 140%;
+}
+
+
+
+
