@@ -285,7 +285,7 @@ table {
 }
 
 .info {
-  padding: 48px 0px 96px;
+  padding: 48px 0px 0px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -306,6 +306,14 @@ table {
   line-height: 22.4px;
   text-align: left;
   color: #3E3E3E;
+}
+
+.footer {
+  height: 200px;
+  background-image: url(images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html {
