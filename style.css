@@ -92,7 +92,7 @@ table {
 }
 
 .header {
-  background-image: url(../images/header-bg.png);
+  background-image: url(images/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
