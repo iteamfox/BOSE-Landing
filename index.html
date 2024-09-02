@@ -13,12 +13,27 @@
     </head>
     <body>        
         <header class="header">
+            <div class="header__top">
+                <img src="images/Logo.png" alt="Bose logo" class="header__top--logo">
+                <a href="#call">
+                    <img 
+                    src="images/Icon-Phone-call.png" 
+                    alt="Phone-call" 
+                    class="header__top--call">
+                </a>
+                <a href="#menu">
+                    <img 
+                    src="images/icons/Icon-Burger-menu.png" 
+                    alt="Burger-menu" 
+                    class="header__top--burger">
+                </a>
+            </div>
             <h1 class="title title--header">
                 The world shades.<br>
                 Your music shines.
             </h1>
-        </header>  
-        
+        </header>
+                
         <main class="main">
             <section class="recommended">
                 <h2 class="title title--recommended">
@@ -114,64 +129,54 @@
 
             <section class="contacts">
                 <h2 class="title title--contact">Contact us</h2>
-                <div class="inputs">
-                    <form 
-                        class="input"
-                        data-qa="big">
-                            <input 
-                                class="input--name"
-                                type="text"
-                                data-qa="keypress"
-                                placeholder="Name">
-                    </form>
-
-                    <form 
-                        class="input"
-                        data-qa="big">
-                            <input 
-                                class="input--email"
-                                type="text"
-                                data-qa="keypress"
-                                placeholder="Email">
-                    </form>
-                    <form 
-                        class="input"
-                        data-qa="big">
-                            <textarea 
-                                class="input--message"
-                                data-qa="keypress"
-                                placeholder="Message">
-                            </textarea>
-                    </form>
-                </div>
-                <button class="send__button">
+                
+                <form class="form">
+					<div class="form__item">
+						<label for="name" class="form__label">Name</label>
+						<input id="name" class="form__input" type="text"
+						placeholder="Name">
+					</div>
+					
+					<div class="form__item">
+						<label for="email" class="form__label">Email</label>
+						<input id="email" class="form__input" type="email"
+						placeholder="Email">
+					</div>
+					
+					<div class="form__item">
+						<label for="message" class="form__label">Message</label>
+						<textarea 
+                        id="message"
+                        class="form__textarea"
+						placeholder="Message"></textarea>												
+					</div>
+					
+					<button class="send__button">
                     <a 
-                        href="#"
-                        data-qa="send__button--hover"
-                        class="send__button--link">
-                        Send
-                    </a>
-                </button> 
+                    href="#"
+                    data-qa="send__button--hover"
+                    class="send__button--link">Send</a></button>				
+				</form>
 
-                <div class="info">
-                    <div class="info--item">
-                        <h3 class="info--title">Phone</h3>
-                        <p class="info--paragraph">+1 234 5555-55-55</p>
+                <adress class="adress">
+                    <div class="adress__item">
+                        <h3 class="adress__label">Phone</h3>
+                        <p class="adress__content">+1 234 5555-55-55</p>
                     </div>
-                    <div class="info--item">
-                        <h3 class="info--title">Email</h3>
-                        <p class="info--paragraph">hello@miami.com</p>
+                    <div class="adress__item">
+                        <h3 class="adress__label">Email</h3>
+                        <p class="adress__content">hello@miami.com</p>
                     </div>
-                    <div class="info--item">
-                        <h3 class="info--title">Address</h3>
-                        <p class="info--paragraph">
+                    <div class="adress__item">
+                        <h3 class="adress__label">Address</h3>
+                        <p class="adress__content">
                             400 first ave.<br>
                             suite 700<br>
-                            Minneapolis, MN 55401
-                        </p>
+                            Minneapolis, MN 55401</p>
                     </div>
+                </adress>
 
-                </div>
+                
             </section>
         </main>
         <footer class="footer">

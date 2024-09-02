@@ -60,6 +60,7 @@ table {
   line-height: 32px;
   letter-spacing: -1.5px;
   text-align: left;
+  margin-bottom: 0;
 }
 .title--recommended {
   font-style: normal;
@@ -98,9 +99,22 @@ table {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding: 0 20px 64px;
   box-sizing: border-box;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header__top--logo {
+  padding: 28px 0px;
+}
+.header__top--call {
+  padding: 24px 0px;
+}
+.header__top--burger {
+  padding: 24px 0px;
 }
 
 .recommended {
@@ -180,78 +194,6 @@ table {
   color: #FFFFFF;
 }
 
-.about {
-  padding: 96px 20px 0px;
-}
-.about--description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 32px 0px 40px;
-}
-
-.paragraph__about {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  padding: 0px;
-}
-
-.contacts {
-  padding: 96px 20px 96px;
-}
-
-.inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 48px 0px 32px;
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.input--name {
-  font-family: Inter;
-  height: 48px;
-  border: 1px solid #F8F8FA;
-  border-radius: 40px;
-  color: #7E7E83;
-  background-color: #F8F8FA;
-  padding-left: 16px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-}
-.input--email {
-  height: 48px;
-  background-color: #F8F8FA;
-  color: #7E7E83;
-  border: 1px solid #F8F8FA;
-  padding-left: 16px;
-  border-radius: 40px;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-}
-.input--message {
-  background-color: #F8F8FA;
-  border: 1px solid #F8F8FA;
-  font-weight: 400;
-  height: 148px;
-  text-align: left;
-  padding: 14px 16px 14px;
-  border-radius: 16px;
-  line-height: 20px;
-}
-
 .send__button {
   display: block;
   text-decoration: none;
@@ -284,13 +226,93 @@ table {
   color: #292929;
 }
 
-.info {
-  padding: 48px 0px 0px;
+.about {
+  padding: 96px 20px 0px;
+}
+.about--description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0px 40px;
+}
+
+.paragraph__about {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  padding: 0px;
+}
+
+.contacts {
+  padding: 96px 20px 96px;
+}
+
+.footer {
+  height: 200px;
+  background-image: url(images/footer-bg.png);
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px 0px 48px;
+}
+.form__input {
+  height: 48px;
+  border: 1px solid #F8F8FA;
+  border-radius: 40px;
+  color: #7E7E83;
+  background-color: #F8F8FA;
+  padding-left: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form__input::placeholder {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.form__textarea {
+  background-color: #F8F8FA;
+  border: 1px solid #F8F8FA;
+  font-weight: 400;
+  height: 148px;
+  border-radius: 16px;
+  line-height: 20px;
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+.form__textarea::placeholder {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.form__label:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.adress {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.info--title {
+.adress__label {
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
@@ -299,21 +321,13 @@ table {
   color: #9FADC2;
   padding-bottom: 8px;
 }
-.info--paragraph {
+.adress__content {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
   text-align: left;
   color: #3E3E3E;
-}
-
-.footer {
-  height: 200px;
-  background-image: url(images/footer-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 html {
