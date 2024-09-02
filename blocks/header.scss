@@ -5,26 +5,10 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 20px 64px;
     box-sizing: border-box;
-
       
 }
-
-.header__top{
-    display: flex;
-    justify-content: space-between;   
-
-    &--logo{
-        padding: 28px 0px;
-    }
-
-    &--call{
-        padding: 24px 0px;
-    }
-    &--burger{
-        padding: 24px  0px;
-    }
-}  
+ 
 

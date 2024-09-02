@@ -99,22 +99,9 @@ table {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0 20px 64px;
   box-sizing: border-box;
-}
-
-.header__top {
-  display: flex;
-  justify-content: space-between;
-}
-.header__top--logo {
-  padding: 28px 0px;
-}
-.header__top--call {
-  padding: 24px 0px;
-}
-.header__top--burger {
-  padding: 24px 0px;
 }
 
 .recommended {
@@ -332,6 +319,13 @@ table {
   line-height: 22.4px;
   text-align: left;
   color: #3E3E3E;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  align-items: center;
 }
 
 html {
