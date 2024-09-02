@@ -328,6 +328,14 @@ table {
   align-items: center;
 }
 
+.menu {
+  background-color: #E8EFF9;
+  padding: 0px 20px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   scroll-behavior: smooth;
 }
