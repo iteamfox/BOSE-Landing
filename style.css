@@ -336,6 +336,33 @@ table {
   flex-direction: column;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+.links__item {
+  margin-bottom: 24px;
+}
+.links__link {
+  font-family: Inter;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #292929;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.links__link:hover {
+  border-bottom: 1px solid #292929;
+}
+
 html {
   scroll-behavior: smooth;
 }
