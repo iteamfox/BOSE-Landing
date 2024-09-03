@@ -62,6 +62,13 @@ table {
   text-align: left;
   margin-bottom: 0;
 }
+.title--header::before {
+  content: url(/images/sound-waves.png);
+  display: block;
+  width: 48px;
+  height: 58px;
+  margin-bottom: 24px;
+}
 .title--recommended {
   font-style: normal;
   font-weight: 700;
@@ -100,12 +107,12 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 20px 64px;
+  padding: 0 20px 40px;
   box-sizing: border-box;
 }
 
 .recommended {
-  padding: 64px 20px 96px;
+  padding: 64px 20px 46px;
 }
 .recommended__products {
   padding: 48px 0px 0px;

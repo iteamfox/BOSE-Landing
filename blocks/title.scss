@@ -7,6 +7,15 @@
     letter-spacing: -1.5px;
     text-align: left;
     margin-bottom: 0;
+
+    &--header::before{
+        content:url(/images/sound-waves.png);
+        display: block;
+        width: 48px;
+        height: 58px;
+        margin-bottom: 24px;       
+
+    }
       
     &--recommended{        
         font-style: normal;
