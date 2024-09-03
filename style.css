@@ -335,6 +335,30 @@ table {
   display: flex;
   flex-direction: column;
 }
+.menu__links {
+  margin-bottom: 16px;
+}
+.menu__paragraph {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.menu__link-call {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #292929;
+  text-transform: uppercase;
+  border-bottom: 1px solid #292929;
+  padding-bottom: 8px;
+  text-decoration: none;
+}
 
 .links {
   display: flex;
