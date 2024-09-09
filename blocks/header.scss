@@ -17,10 +17,8 @@
     grid-template-rows: 1fr 1fr;
     gap: 20px;
 
-    @include desktop() {
-        
-        grid-template-columns: repeat(12, 63px);    
-        grid-template-rows: 1fr 1fr; 
+    @include desktop() {        
+        grid-template-columns: repeat(12, 63px);        
         gap: 24px;
     }
 
