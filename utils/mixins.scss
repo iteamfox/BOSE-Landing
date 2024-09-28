@@ -4,6 +4,12 @@
     }
 }
 
+@mixin tablet() {
+    @media (min-width: 744px) {
+      @content;
+    }
+  }
+
 @mixin grid(){
     display: grid;
     justify-content: center;
@@ -12,6 +18,6 @@
 
     @include desktop() {        
         grid-template-columns: repeat(12, 63px);        
-        gap: 24px;
+        // gap: 24px;
     }
 }

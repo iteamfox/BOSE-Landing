@@ -116,7 +116,6 @@ table {
 @media (min-width: 1020px) {
   .header {
     grid-template-columns: repeat(12, 63px);
-    gap: 24px;
   }
 }
 .header__navigation {
@@ -218,14 +217,38 @@ table {
 
 .photo {
   display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 130px);
+  gap: 20px;
   grid-template-columns: 1fr 1fr;
   padding: 0px 0px 16px;
-  gap: 20px;
+}
+@media (min-width: 1020px) {
+  .photo {
+    grid-template-columns: repeat(12, 63px);
+  }
 }
 .photo__item {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1020px) {
+  .photo {
+    grid-column: span 8;
+  }
+}
+@media (min-width: 1020px) {
+  .photo--small {
+    grid-column: span 4;
+  }
+}
+@media (min-width: 1020px) {
+  .photo--big {
+    grid-column: span 8;
+  }
 }
 
 .button {
@@ -237,7 +260,7 @@ table {
   height: 56px;
   line-height: 56px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #e4e4e4;
 }
 
 .send__button {
