@@ -310,11 +310,58 @@ table {
 .about {
   padding: 96px 20px 0px;
 }
-.about--description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 32px 0px 40px;
+@media (min-width: 744px) {
+  .about__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+  }
+}
+@media (min-width: 1020px) {
+  .about__content {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+.about__title {
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+@media (min-width: 744px) {
+  .about__title {
+    grid-column: 1/4;
+    margin: 0;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1020px) {
+  .about__title {
+    grid-column: 1/6;
+    font-size: 48px;
+  }
+}
+@media (min-width: 744px) {
+  .about__description {
+    grid-column: 4/7;
+  }
+}
+@media (min-width: 1020px) {
+  .about__description {
+    grid-column: 6/13;
+  }
+}
+.about__subtitle {
+  margin: 0 0 16px;
+  font-weight: 700;
+}
+.about__subtitle:last-of-type {
+  margin: 0 0 40px;
+}
+.about__paragraph {
+  margin: 0;
+  line-height: 169%;
 }
 
 .paragraph__about {
