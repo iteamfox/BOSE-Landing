@@ -261,6 +261,18 @@ table {
   line-height: 56px;
   font-weight: 700;
   color: #e4e4e4;
+  place-items: center;
+}
+@media (min-width: 1020px) {
+  .button {
+    text-align: center;
+    place-items: center;
+    width: 392px;
+    height: 56px;
+    padding: 0px 48px 0px 48px;
+    gap: 0px;
+    margin: 0 auto;
+  }
 }
 
 .send__button {
