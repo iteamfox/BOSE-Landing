@@ -31,3 +31,16 @@
     white-space: nowrap;
     width: 1px;
 }
+
+@mixin top-actions {
+    --icon-width: 24px;
+  
+    display: grid;
+    grid-template-columns: 1fr var(--icon-width) var(--icon-width);
+    gap: var(--icon-width);
+    justify-content: space-between;
+  
+    @include tablet() {
+      --icon-width: 32px;
+    }
+  }

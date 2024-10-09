@@ -1,0 +1,17 @@
+@use '../utils/mixins' as *;
+
+.logo {
+    &__image {
+      height: 16px;
+  
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+  
+      @include tablet {
+        height: 24px;
+      }
+    }
+  }
