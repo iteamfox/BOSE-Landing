@@ -1,12 +1,13 @@
+@use '../utils/mixins' as *;
 
 .categories{
-  padding: 0px 20px 0px;
+  // padding: 0px 20px 0px;
   display: grid;  
  
 }
 
 .category{
-  padding: 0px 0px 40px;    
+  // padding: 0px 0px 40px;    
 
   &--paragraph{
       grid-column: 1/3;
